@@ -1,7 +1,7 @@
 from django.urls import path
 from .views import *
 urlpatterns = [
-    path('/',index),
+    path('',login_user),
     path('index/',index,name="index"),
     path('insert/',insert),
     path('delete/<int:id>',delete,name='delete'),
